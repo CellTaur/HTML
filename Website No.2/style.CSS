@@ -1,3 +1,19 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    min-height: 100vh;
+}
+
+
+
 .wrapper {
 
 }
@@ -80,4 +96,87 @@
     width: 300px;
     height: 80px;
     border: 3px solid black;
+}
+
+
+/* Registartion.html */
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.registration-wrapper {
+    height: 100%;
+
+    color: white;
+}
+
+.registration-wrapper input {
+    padding: 0.3rem;
+}
+
+.user-info img {
+    padding: 10px;
+    border-radius: 50%;
+    width: 150px;
+}
+
+.registration-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.row input {
+    min-width: 20%;
+    margin: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.buttons button {
+    background-color: #d7a4e9;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 2rem;
+    font-weight: 700;
+}
+
+.ref-link {
+    width: 70vh;
+    margin: 2rem auto;
+}
+
+.ref-link input {
+    width: 100%;
+}
+
+.partner-links {
+    margin: 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.partner-links label {
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 0.4rem 0.6rem;
+    margin-right: 1rem;
+}
+
+.partner-links input {
+    min-width: 20%;
+}
+
+@media screen and (max-width:680px) {
+    .ref-link {
+        width: 90%;
+    }
 }
