@@ -9,135 +9,71 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: white;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
-
-
-.wrapper {
-
-}
-.sidebar_profile {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-#profile {
-    margin-right: 40px;
-}
-#profile p {
-    border: 2px solid black;
-}
-#profile_pic {
-    margin-top: 10px;
-    margin-left: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-.sidebar_profile2 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-.sidebar_profile2 div {
-    margin-top: 10px;
-    background-color: black;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-}
 .title {
-    text-align: center;
+    margin-bottom: 2rem;
 }
 .title_image {
     margin: auto;
-    background-color: aqua;
-    width: 1200px;
-    height: 450px;
-    border: 5px solid black;
+    width: 50%;
+    height: 500px;
+    border: 0.5px solid black;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.8);
 }
-.main {
-    display: flex;
-    justify-content: space-evenly;
-}
-.main div {
-    width: 400px;
-    height: 150px;
-    text-align: center;
-    padding-top: 3%;
-}
-.main_left {
-
-}
-.main_right {
-
-}
-.cloud p {
-    border: 1px solid black;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-.cloud {
-    background-image: url("images/cloud.png");
-    background-size: 65%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#green {
-    color: rgb(86, 184, 86);
-}
-#purple {
-    color: blueviolet;
-}
-#box {
-    position: absolute;
-    margin-left: 50px;
-    width: 300px;
-    height: 80px;
-    border: 3px solid black;
-}
-
-
-/* Registartion.html */
-
-::-webkit-input-placeholder {
-    text-align: center;
-}
-
-.registration-wrapper {
+.title_image img {
     height: 100%;
+    width: 100%;
+}
+main {
+    margin: 3rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+main div {
+    width: 15%;
+    position: relative;
 
-    color: white;
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+main .italic {
+    font-style: italic;
 }
 
-.registration-wrapper input {
+/* Registration */
+.registration {
+    
+}
+.registration input {
     padding: 0.3rem;
 }
-
 .user-info img {
     padding: 10px;
     border-radius: 50%;
     width: 150px;
 }
-
-.registration-wrapper form {
+.registration form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 .row input {
     min-width: 20%;
     margin: auto;
 }
-
 .buttons {
     display: flex;
     justify-content: center;
     gap: 5rem;
 }
-
 .buttons button {
     background-color: #d7a4e9;
     color: white;
@@ -146,16 +82,16 @@ body {
     border-radius: 2rem;
     font-weight: 700;
 }
-
 .ref-link {
     width: 70vh;
     margin: 2rem auto;
 }
-
 .ref-link input {
     width: 100%;
 }
-
+::-webkit-input-placeholder {
+    text-align: center;
+}
 .partner-links {
     margin: 1rem 0;
 
@@ -163,14 +99,12 @@ body {
     flex-direction: column;
     gap: 10px;
 }
-
 .partner-links label {
     border: 1px solid black;
     border-radius: 100%;
     padding: 0.4rem 0.6rem;
     margin-right: 1rem;
 }
-
 .partner-links input {
     min-width: 20%;
 }
@@ -178,5 +112,14 @@ body {
 @media screen and (max-width:680px) {
     .ref-link {
         width: 90%;
+    }
+}
+
+@keyframes slider {
+    from {
+        left: -20%;
+    }
+    to {
+        left: 20%;
     }
 }
